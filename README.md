@@ -33,3 +33,31 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+---
+
+## Screenshots
+
+### Register API
+![Register](docs/Register.png)
+---
+### Login API (JWT Token)
+![Login](docs/Login.png)
+---
+### Protected Endpoint (401 Unauthorized)
+![401 Unauthorized](docs/401Unauthorized.png)
+---
+### Create Patient
+![Create Patient](docs/CreatePatient.png)
+---
+### Create Doctor
+![Create Doctor](docs/CreateDoctor.png)
+---
+### Create Mapping (Patient Assigned to Doctor)
+![Create Mapping](docs/CreateMapping.png)
+---
+### Get Doctors by Patient
+![Get Doctors By Patient](docs/GetDoctorsByPatient.png)
+---
+### Django Admin Panel
+![Admin Panel](docs/AdminPanel.png)
+---
