@@ -1,5 +1,60 @@
 # Healthcare Backend 
 
+## Overview
+
+This project is a Healthcare Backend built using Django and Django REST Framework.
+It provides secure JWT-based authentication and APIs to manage patients, doctors, and their mappings.
+
+---
+
+## Tech Stack
+
+- Django
+- Django REST Framework
+- PostgreSQL
+- JWT (djangorestframework-simplejwt)
+- Python
+
+---
+
+## Features
+
+- User Registration & Login (JWT Authentication)
+- CRUD Operations for Patients
+- CRUD Operations for Doctors
+- Patient–Doctor Mapping
+- Protected Endpoints
+- Environment Variable Configuration
+
+---
+
+## API Endpoints
+### Authentication
+- POST /api/auth/register/
+- POST /api/auth/login/
+
+### Patients
+- POST /api/patients/
+- GET /api/patients/
+- GET /api/patients/<patient_id>/
+- PUT /api/patients/<patient_id>/
+- DELETE /api/patients/<patient_id>/
+
+### Doctors
+- POST /api/doctors/
+- GET /api/doctors/
+- GET /api/doctors/<doctor_id>/
+- PUT /api/doctors/<doctor_id>/
+- DELETE /api/doctors/<doctor_id>/
+
+### Mappings
+- POST /api/mappings/
+- GET /api/mappings/
+- GET /api/mappings/patient/<patient_id>
+- DELETE /api/mappings/patient/<patient_id>
+
+---
+
 ## Setup Instructions
 
 ### 1. Clone the repository
@@ -33,6 +88,7 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+
 ---
 
 ## Screenshots
@@ -60,4 +116,5 @@ python manage.py runserver
 ---
 ### Django Admin Panel
 ![Admin Panel](docs/AdminPanel.png)
+
 ---
